@@ -19,4 +19,5 @@ from django.contrib import admin
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^public_site/', include('public_site.urls', namespace="public_site")),
+    url(r'^market_app/', include('market_app.urls', namespace="market_app")),
 ]

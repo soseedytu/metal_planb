@@ -1,0 +1,35 @@
+{% extends "shared/main.html" %}
+
+{% block main_content %}
+
+    {% if error_message %}
+
+        <p>
+            <strong>
+                {{ error_message }}
+            </strong>
+        </p>
+
+    {% endif %}
+
+    <h1>{{ question.question_text }}</h1>
+
+    <ul>
+        <form action = "{% url 'polls:votes' question.id %}" method="post">
+        {% csrf_token %}
+        {% for choice in question.choice_set.all %}
+            <li>
+            <input type="radio" name = "choice" id="choice{{ forloop.counter }}" value="{{choice.id}}">
+            <label for="choice{{ forloop.counter }}"> {{ choice.choice_text }} </label>
+            </li>
+        {% endfor %}
+
+            <input type="submit" value="Vote" />
+
+    </form>
+    </ul>
+
+    <br />
+    <a href="{% url 'polls:index' %}"> &lt; Back to Question List </a>
+
+{% endblock %}
