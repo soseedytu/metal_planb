@@ -1,13 +1,16 @@
 from django.shortcuts import render
-from business_services.services.buyer_service import SupplierService
+from business_services.logic.buyer_service import BuyerService
 
 # Create your views here.
 app_label = 'market_app'
 
 
 def index(request):
-    svs = SupplierService
-    result = svs.get_supplier_list(svs, 'Name')
+    svs = BuyerService
+    lst_suppliers = svs.get_supplier_list(svs, 'Name')
+    result = {
+        'supplier_list': lst_suppliers
+    }
     return render(request, 'buyer/index.html', result)
 
 

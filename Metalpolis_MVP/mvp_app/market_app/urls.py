@@ -15,11 +15,21 @@ Including another URLconf
 """
 from django.conf.urls import url
 from market_app.views import views
+from market_app.views import user_views
 
 # http://localhost:8000/polls
 urlpatterns = [
     # http://localhost:8000/polls/
     url(r'^$', views.index, name="index"),
-    # http://localhost:8000/polls/1
+    # http://localhost:8000/market_app/1
     url(r'^(?P<supplier_id>[0-9]+)/$', views.detail, name="detail"),
+
+    # http://localhost:8000/market_app/register
+    url(r'^register/$', user_views.registration_main, name="register"),
+
+    # http://localhost:8000/market_app/register/buyer
+    url(r'^register/buyer$', user_views.register_buyer, name="register_buyer"),
+    # http://localhost:8000/market_app/register/supplier
+    url(r'^register/supplier$', user_views.register_supplier, name="register_supplier"),
+
 ]

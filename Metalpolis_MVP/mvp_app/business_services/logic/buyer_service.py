@@ -1,12 +1,18 @@
-from common_lib.models import MCompany
+from business_services.logic.supplier_service import SupplierService
 
 
-class SupplierService(object):
+class BuyerService(object):
 
     def get_supplier_list(self, order_by_col):
-        lst_suppliers = MCompany.objects.order_by(order_by_col)  # get last five
-        result = {
-            'supplier_list': lst_suppliers
-        }
-        return result
+        sup_svs = SupplierService
+        lst_suppliers = sup_svs.get_supplier_list(sup_svs, order_by_col)
+        return lst_suppliers
+
+    def register_buyer(self, buyer_obj):
+        print(buyer_obj)
+        #{'EmailAddress': 'abc@abc.com', 'Username': 'abc', 'Title': 'abc', 'ContactNumber': '1231313', 'MCompany_Id': 1}
+        print(buyer_obj['Username'])
+        print(buyer_obj['EmailAddress'])
+        # print(buyer_obj.Password)
+        return None
 
