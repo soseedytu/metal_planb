@@ -1,40 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4d5db2d3-613c-4fbe-af0a-8eafa659ca53" name="Default" comment="Added business_services app to keep all business logic.&#10;Flow of web request will be as follow:&#10;&#10;HTML &gt; view.py &gt; business services &gt; models.py&#10;&#10;Flow of web response will be as follow:&#10;&#10;HTML &lt; view.py &lt; business services &lt; models.py">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.idea/Metalpolis_MVP.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.idea/inspectionProfiles/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../metalpolis_mvp/.idea/inspectionProfiles/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../metalpolis_mvp/.idea/libraries/Django_Lib.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../metalpolis_mvp/.idea/metalpolis_mvp.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../metalpolis_mvp/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../metalpolis_mvp/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../metalpolis_mvp/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/business_services/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/business_services/apps.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/business_services/logic/buyer_service.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/business_services/migrations/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/business_services/tests.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common_lib/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common_lib/admin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common_lib/apps.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common_lib/migrations/0001_initial.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common_lib/migrations/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common_lib/models.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common_lib/tests.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common_lib/views.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/market_app/templates/shared_market_app/footer.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/market_app/templates/shared_market_app/main.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/start.sh" />
+    <list default="true" id="4d5db2d3-613c-4fbe-af0a-8eafa659ca53" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/market_app/templates/buyer/index.html" afterPath="$PROJECT_DIR$/market_app/templates/buyer/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/market_app/views/views.py" afterPath="$PROJECT_DIR$/market_app/views/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvp_app/settings.py" afterPath="$PROJECT_DIR$/mvp_app/settings.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public_site/templates/site/index.html" afterPath="$PROJECT_DIR$/public_site/templates/site/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -71,11 +39,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="buyer_service.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="buyer_service.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/business_services/logic/buyer_service.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="144">
               <caret line="8" column="42" lean-forward="true" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public_site/templates/site/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="129">
+              <caret line="48" column="62" lean-forward="false" selection-start-line="48" selection-start-column="62" selection-end-line="48" selection-end-column="62" />
               <folding />
             </state>
           </provider>
@@ -339,7 +317,14 @@
       <option name="project" value="LOCAL" />
       <updated>1506226324717</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added business_services app to keep all business logic.&#10;Flow of web request will be as follow:&#10;&#10;HTML &gt; view.py &gt; business services &gt; models.py&#10;&#10;Flow of web response will be as follow:&#10;&#10;HTML &lt; view.py &lt; business services &lt; models.py">
+      <created>1506229834076</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1506229834076</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView">
@@ -723,6 +708,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -730,13 +716,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="29" lean-forward="false" selection-start-line="0" selection-start-column="29" selection-end-line="0" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_site/templates/site/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="48" column="62" lean-forward="false" selection-start-line="48" selection-start-column="62" selection-end-line="48" selection-end-column="62" />
         </state>
       </provider>
     </entry>
@@ -769,6 +748,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -784,6 +764,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="8" column="42" lean-forward="true" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_site/templates/site/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="48" column="62" lean-forward="false" selection-start-line="48" selection-start-column="62" selection-end-line="48" selection-end-column="62" />
           <folding />
         </state>
       </provider>
