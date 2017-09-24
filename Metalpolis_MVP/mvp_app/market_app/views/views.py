@@ -1,17 +1,14 @@
 from django.shortcuts import render
-from common_lib.models import MCompany
+from business_services.services.buyer_service import SupplierService
 
 # Create your views here.
 app_label = 'market_app'
 
 
 def index(request):
-    lstSuppliers = MCompany.objects.order_by('Name')  # get last five
-    print(lstSuppliers.count())
-    dict = {
-        'supplier_list': lstSuppliers
-    }
-    return render(request, 'buyer/index.html', dict)
+    svs = SupplierService
+    result = svs.get_supplier_list(svs, 'Name')
+    return render(request, 'buyer/index.html', result)
 
 
 def detail(request, supplier_id):

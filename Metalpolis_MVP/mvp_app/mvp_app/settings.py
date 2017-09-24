@@ -25,7 +25,7 @@ SECRET_KEY = 'h8!ob1d-(^fk$*ih7li5d32($sh+_a_l$%-z5(e(k_$$mfd=-*'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', '13.229.88.195']
 
 
 # Application definition
@@ -125,3 +125,5 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATIC_ROOT = '/home/ubuntu/mvp_metalpolis/mvp_app/public_site/static/'
