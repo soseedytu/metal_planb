@@ -324,7 +324,14 @@
       <option name="project" value="LOCAL" />
       <updated>1506229834076</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added business_services app to keep all business logic.&#10;Flow of web request will be as follow:&#10;&#10;HTML &gt; view.py &gt; business services &gt; models.py&#10;&#10;Flow of web response will be as follow:&#10;&#10;HTML &lt; view.py &lt; business services &lt; models.py">
+      <created>1506229914011</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1506229914011</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TodoView">
