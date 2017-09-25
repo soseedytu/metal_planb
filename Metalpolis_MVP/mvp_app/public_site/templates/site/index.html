@@ -28,6 +28,7 @@
     <![endif]-->
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
 <div id="preloader">
   <div id="status"> <img src="{% static 'public_site' %}/img/preloader.gif" height="64" width="64" alt=""> </div>
 </div>
@@ -70,32 +71,32 @@
           <p class="intro-text">One-stop precision engineering market place</p>
           <a href="#about" class="btn btn-default page-scroll">Learn More</a> </div>
       </div>
-
         <div class="row">
             <div class="col-md-3"></div>
             <div class="col-md-6">
                 <div class="wrap">
                     <p class="form-title">
                         or, Sign In</p>
-                    <form class="login">
-                    <input type="text" placeholder="Username" />
-                    <input type="password" placeholder="Password" />
-                    <input type="submit" value="Sign In" class="btn btn-success btn-sm" />
-                    <div class="remember-forgot">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="checkbox pull-right">
-                                    <label>
-                                        <input type="checkbox" />
-                                        Remember Me
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-md-12 forgot-pass-content">
-                                <a href="javascript:void(0)" class="forgot-pass pull-right" style="color: white !important;">Forgot Password</a>
-                            </div>
-                        </div>
-                    </div>
+                    <form class="login" action="{% url 'public_site:index' %}" method="post" >
+                      {% csrf_token %}
+                      <input type="text" placeholder="Username" name="EmailAddress"/>
+                      <input type="password" placeholder="Password" name="Password"/>
+                      <input type="submit" value="Sign In" class="btn btn-success btn-sm" />
+                      <div class="remember-forgot">
+                          <div class="row">
+                              <div class="col-md-12">
+                                  <div class="checkbox pull-right">
+                                      <label>
+                                          <input type="checkbox" />
+                                          Remember Me
+                                      </label>
+                                  </div>
+                              </div>
+                              <div class="col-md-12 forgot-pass-content">
+                                  <a href="http://www.google.com" class="forgot-pass pull-right" style="color: white !important;">Forgot Password</a>
+                              </div>
+                          </div>
+                      </div>
                     </form>
                 </div>
             </div>

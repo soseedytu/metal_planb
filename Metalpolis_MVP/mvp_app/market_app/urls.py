@@ -29,6 +29,9 @@ urlpatterns = [
 
     # http://localhost:8000/market_app/register/buyer
     url(r'^register/buyer$', user_views.register_buyer, name="register_buyer"),
+    # http://localhost:8000/market_app/register/buyer
+    url(r'^validate$', user_views.validate_user, name="validate_user"),
+
     # http://localhost:8000/market_app/register/supplier
     url(r'^register/supplier$', user_views.register_supplier, name="register_supplier"),
 
