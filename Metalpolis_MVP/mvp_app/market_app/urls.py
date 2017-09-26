@@ -16,6 +16,7 @@ Including another URLconf
 from django.conf.urls import url
 from market_app.views import views
 from market_app.views import user_views
+from public_site.views import views as public_view
 
 # http://localhost:8000/polls
 urlpatterns = [
@@ -23,16 +24,26 @@ urlpatterns = [
     url(r'^$', views.index, name="index"),
     # http://localhost:8000/market_app/1
     url(r'^(?P<supplier_id>[0-9]+)/$', views.detail, name="detail"),
-
     # http://localhost:8000/market_app/register
     url(r'^register/$', user_views.registration_main, name="register"),
-
     # http://localhost:8000/market_app/register/buyer
     url(r'^register/buyer$', user_views.register_buyer, name="register_buyer"),
     # http://localhost:8000/market_app/register/buyer
-    url(r'^login$', user_views.login, name="login"),
-
+    # url(r'^login$', user_views.login, name="login"),
+    # http://localhost:8000/market_app/buyer/dashboard
+    url(r'^buyer/dashboard$', user_views.buyer_dashboard, name="buyer_dashboard"),
+    # http://localhost:8000/market_app/buyer/timeline
+    url(r'^buyer/timeline$', user_views.buyer_timeline, name="buyer_timeline"),
+    # http://localhost:8000/market_app/buyer/create_rfq
+    url(r'^buyer/create_rfq$', user_views.create_rfq, name="buyer_create_rfq"),
+    # http://localhost:8000/market_app/buyer/rfq_list
+    url(r'^buyer/rfq_list$', user_views.rfq_list, name="buyer_rfq_list"),
+    # http://localhost:8000/market_app/buyer/quotation
+    url(r'^buyer/quotation', user_views.quotation, name="buyer_quotation"),
+    # http://localhost:8000/market_app/buyer/profile
+    url(r'^buyer/profile', user_views.buyer_profile, name="buyer_profile"),
     # http://localhost:8000/market_app/register/supplier
     url(r'^register/supplier$', user_views.register_supplier, name="register_supplier"),
-
+    # http://localhost:8000/public_site/index.html
+    url(r'^public_site$', public_view.sign_out, name="sign_out"),
 ]

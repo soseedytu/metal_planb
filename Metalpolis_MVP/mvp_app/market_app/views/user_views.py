@@ -59,5 +59,52 @@ def login(request):
     else:
         form = LoginForm()
 
-    return HttpResponse(email)
+    return render(request, 'buyer/dashboard.html')
 
+
+def buyer_dashboard(request):
+    # TODO: Please add Get Logic
+    # TODO: please add Post Logic
+    print ('Buyer Dashboard page started')
+
+    return render(request, 'buyer/Dashboard.html')
+
+
+def buyer_timeline(request):
+    # TODO: Please add Get Logic
+    # TODO: please add Post Logic
+    print ('Buyer Timeline page started')
+
+    return render(request, 'buyer/Timeline.html')
+
+
+def create_rfq(request):
+    # TODO: Please add Get Logic
+    # TODO: please add Post Logic
+    print ('create rfq page started')
+
+    return render(request, 'buyer/CreateRFQ.html')
+
+
+def rfq_list(request):
+    # TODO: Please add Get Logic
+    # TODO: please add Post Logic
+    print ('rfq list page started')
+
+    return render(request, 'buyer/RFQList.html')
+
+
+def quotation(request):
+    # TODO: Please add Get Logic
+    # TODO: please add Post Logic
+    print ('quotation page started')
+
+    return render(request, 'buyer/Quotation.html')
+
+
+def buyer_profile(request):
+    # TODO: Please add Get Logic
+    # TODO: please add Post Logic
+    print ('Buyer Profile page started')
+
+    return render(request, 'buyer/Profile.html')
