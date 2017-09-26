@@ -1,5 +1,5 @@
 from django.db import models
-
+from django.contrib.auth.models import update_last_login, user_logged_in
 
 # Create your models here.
 
@@ -12,6 +12,8 @@ class MDocumentNumber(models.Model):
     Format = models.CharField(max_length=45)
     RunningNumber = models.IntegerField(null=False)
 
+    def __str__(self):
+        return self.Id
 
 class CCodeCategory(models.Model):
     Id = models.AutoField(primary_key=True, unique=True, db_index=True)  # system will add automatically
@@ -24,6 +26,8 @@ class CCodeCategory(models.Model):
     Status = models.IntegerField(null=False)
     Version = models.DateTimeField(null=True)
 
+    def __str__(self):
+        return self.Name
 
 class CCodeTable(models.Model):
     Id = models.AutoField(primary_key=True, unique=True, db_index=True)  # system will add automatically
@@ -38,6 +42,8 @@ class CCodeTable(models.Model):
     CParentCode_Id = models.ForeignKey('self', db_index=True, null=True, blank=True)
     Version = models.DateTimeField(auto_now_add=True, null=True)
 
+    def __str__(self):
+        return self.Description
 
 class MCompany(models.Model):
     Id = models.AutoField(primary_key=True)  # system will add automatically
@@ -47,6 +53,8 @@ class MCompany(models.Model):
     RegNo = models.CharField(max_length=45, null=False)
     Code = models.CharField(max_length=45, null=False)
 
+    def __str__(self):
+        return self.Name
 
 class MUser(models.Model):
     Id = models.AutoField(primary_key=True)
@@ -66,6 +74,13 @@ class MUser(models.Model):
     ContactNumber = models.CharField(max_length=45)
     MCompany_Id = models.ForeignKey(MCompany, db_index=True, null=True)
 
+    def __str__(self):
+        return self.EmailAddress
+
+    def check_password(self, raw_password):
+        # TODO: Make this auto update using
+        # check_passwords setter argument
+        return check_password(raw_password, self.password)
 
 class MBuyer(models.Model):
     MUser_Id = models.OneToOneField(MUser, primary_key=True, db_index=True)
@@ -73,7 +88,6 @@ class MBuyer(models.Model):
     TotalClosedRfqCount = models.IntegerField(default=0)
     TotalWithdrawRfqCount = models.IntegerField(default=0)
     TotalAwardRfqCount = models.IntegerField(default=0)
-
 
 class MSupplier(models.Model):
     MUser_Id = models.OneToOneField(MUser, primary_key=True, db_index=True)
@@ -93,6 +107,8 @@ class CTags(models.Model):
     Status = models.IntegerField(null=False)
     Version = models.DateTimeField(null=True)
 
+    def __str__(self):
+        return self.TagName
 
 class MServices(models.Model):
     Id = models.AutoField(primary_key=True) # system will add automatically
@@ -107,6 +123,8 @@ class MServices(models.Model):
     Version = models.DateTimeField(null=True)
     CommonShapeImage = models.BinaryField()
 
+    def __str__(self):
+        return self.ServiceName
 
 class TDocument(models.Model):
     Id = models.AutoField(primary_key=True)  # system will add automatically
@@ -126,6 +144,8 @@ class TDocument(models.Model):
     MUser_Id = models.ForeignKey(MUser, db_index=True)
     DocumentNo = models.CharField(max_length=45, null=False)
 
+    def __str__(self):
+        return self.Title
 
 class TRequestForQuotation(models.Model):
     Document_Id = models.OneToOneField(TDocument, db_index=True, primary_key=True)
@@ -138,6 +158,8 @@ class TRequestForQuotation(models.Model):
     RequiredServiceTags = models.CharField(max_length=400)
     IsSelected = models.BooleanField(default=1)
 
+    def __str__(self):
+        return self.Title
 
 class TSupplierQuotation(models.Model):
     Document_Id = models.OneToOneField(TDocument, db_index=True, primary_key=True, related_name='Document_ID')

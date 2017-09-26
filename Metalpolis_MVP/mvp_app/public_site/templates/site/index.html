@@ -77,11 +77,13 @@
                 <div class="wrap">
                     <p class="form-title">
                         or, Sign In</p>
-                    <form class="login" action="{% url 'public_site:index' %}" method="post" >
+                    <form name="loginform" id="loginform" class="login" action="{% url 'market_app:login' %}" method="post" >
+
                       {% csrf_token %}
-                      <input type="text" placeholder="Username" name="EmailAddress"/>
+
+                      <input type="text" placeholder="EmailAddress" name="EmailAddress"/>
                       <input type="password" placeholder="Password" name="Password"/>
-                      <input type="submit" value="Sign In" class="btn btn-success btn-sm" />
+                      <input id="btnSigIn" type="submit" value="Sign In" class="btn btn-success btn-sm" />
                       <div class="remember-forgot">
                           <div class="row">
                               <div class="col-md-12">
@@ -445,7 +447,7 @@
           <p class="help-block text-danger"></p>
         </div>
         <div id="success"></div>
-        <button type="submit" class="btn btn-default">Send Message</button>
+        <button type="submit" id="btnMessage" class="btn btn-default">Send Message</button>
       </form>
       <div class="social">
         <h3>Follow us</h3>
@@ -476,7 +478,7 @@
 <script type="text/javascript" src="{% static 'public_site' %}/js/jquery.isotope.js"></script>
 <script type="text/javascript" src="{% static 'public_site' %}/js/jquery.parallax.js"></script>
 <script type="text/javascript" src="{% static 'public_site' %}/js/jqBootstrapValidation.js"></script>
-<script type="text/javascript" src="{% static 'public_site' %}/js/contact_me.js"></script>
+<!-- <script type="text/javascript" src="{% static 'public_site' %}/js/contact_me.js"></script>-->
 
 <!-- Javascripts
     ================================================== --> 

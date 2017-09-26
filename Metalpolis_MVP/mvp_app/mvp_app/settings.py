@@ -27,6 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', '13.229.88.195']
 
+# AUTH_USER_MODEL = 'common_lib.models.MUser'
 
 # Application definition
 

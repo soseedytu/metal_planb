@@ -7,7 +7,9 @@ app_label = 'public_site'
 def index(request):
     print('Validation Started')
     username = "not logged in"
+    print(request.method)
     if request.method == 'POST':
+        print('post method')
         form = LoginForm(request.POST)
         print(form.is_valid())
 
@@ -15,6 +17,7 @@ def index(request):
         form.is_valid()
 
     else:
+        print('Initialized')
         form = LoginForm()
 
     return render(request, 'site/index.html')
