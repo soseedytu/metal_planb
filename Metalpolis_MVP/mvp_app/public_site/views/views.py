@@ -25,5 +25,4 @@ def index(request):
 
 def sign_out(request):
     print('Sign Out Started')
-
     return render(request, 'site/index.html')

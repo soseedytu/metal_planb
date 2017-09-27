@@ -31,6 +31,8 @@ urlpatterns = [
     # http://localhost:8000/market_app/register/buyer
     # url(r'^login$', user_views.login, name="login"),
     # http://localhost:8000/market_app/buyer/dashboard
+    url(r'^buyer/dashboard$', user_views.login, name="auth_login"),
+    # http://localhost:8000/market_app/buyer/dashboard
     url(r'^buyer/dashboard$', user_views.buyer_dashboard, name="buyer_dashboard"),
     # http://localhost:8000/market_app/buyer/timeline
     url(r'^buyer/timeline$', user_views.buyer_timeline, name="buyer_timeline"),

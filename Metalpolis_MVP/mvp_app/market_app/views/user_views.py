@@ -2,8 +2,12 @@ from business_services.logic.buyer_service import BuyerService
 from common_lib.view_models.buyer.vm_buyer_registration import BuyerViewModel
 from common_lib.view_models.User.LogIn import LoginForm
 from django.shortcuts import render
-from django.http import HttpResponse
-
+from django.http import HttpResponse, HttpResponseRedirect
+from django.contrib.auth import authenticate
+from django.contrib.auth import login as auth_login
+from django.forms.utils import ErrorList
+from django.contrib import messages
+from django import forms
 # Create your views here.
 app_label = 'market_app_users'
 
@@ -47,6 +51,7 @@ def register_supplier(request):
 def login(request):
     # TODO: Please add Get Logic
     # TODO: please add Post Logic
+    context = {}
     print('Validation Started')
     username = "not logged in"
     if request.method == 'POST':
@@ -55,12 +60,32 @@ def login(request):
         print(form.is_valid())
 
         # check if form is valid
-        email = form.is_valid()
+        if form.is_valid():
+            print ('form is valid')
+            username = request.POST['EmailAddress']
+            password = request.POST['Password']
+            user = authenticate(request,email=username,password=password)
+
+            if user is not None:
+                print ('authenticated')
+                if user.is_active:
+                    print ('user is active')
+                    auth_login(request,user)
+                    #return render(request, 'buyer/Dashboard.html')
+                else:
+                    print ('user is not active')
+                    context['error'] = 'Non Active User'
+            else:
+                print ('username or password wrong')
+                #return HttpResponse('username or password wrong')
+                #raise forms.ValidationError(form.fields['EmailAddress'].error_messages['Bad Username or Password'])
+                messages.error(request, 'Bad Username or Password.')
+                return render(request, 'site/index.html')
+        else:
+            return HttpResponse('form is not valid')
     else:
         form = LoginForm()
-
-    return render(request, 'buyer/dashboard.html')
-
+    return render(request, 'buyer/Dashboard.html')
 
 def buyer_dashboard(request):
     # TODO: Please add Get Logic

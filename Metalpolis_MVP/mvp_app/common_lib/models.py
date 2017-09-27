@@ -1,6 +1,8 @@
 from django.db import models
 from django.contrib.auth.models import update_last_login, user_logged_in
-
+from django.contrib.auth.models import User
+from django.db.models.signals import post_save
+from django.dispatch import receiver
 # Create your models here.
 
 
@@ -58,9 +60,10 @@ class MCompany(models.Model):
 
 class MUser(models.Model):
     Id = models.AutoField(primary_key=True)
-    EmailAddress = models.CharField(max_length=55, null=False, db_index=True)
-    Password = models.CharField(max_length=45, null=False)
-    Username = models.CharField(max_length=45, null=False)
+    #EmailAddress = models.CharField(max_length=55, null=False, db_index=True)
+    #Password = models.CharField(max_length=45, null=False)
+    #Username = models.CharField(max_length=45, null=False)
+    user = models.OneToOneField(User,on_delete=models.CASCADE)
     CUserType = models.ForeignKey(CCodeTable, db_index=False)
     CreatedDate = models.DateTimeField(auto_now_add=True, null=False)
     CreatedBy = models.CharField(max_length=45, null=False, default="admin")
@@ -73,9 +76,6 @@ class MUser(models.Model):
     Title = models.CharField(max_length=5)
     ContactNumber = models.CharField(max_length=45)
     MCompany_Id = models.ForeignKey(MCompany, db_index=True, null=True)
-
-    def __str__(self):
-        return self.EmailAddress
 
     def check_password(self, raw_password):
         # TODO: Make this auto update using
