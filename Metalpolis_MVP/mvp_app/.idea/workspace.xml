@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d5db2d3-613c-4fbe-af0a-8eafa659ca53" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/market_app/static/market_app/app/register_supplier.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/market_app/static/market_app/js/knockout-3.4.2.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/business_services/tests.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/common_lib/admin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/common_lib/tests.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/common_lib/views.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/market_app/templates/index.html" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/market_app/static/market_app/js/typeahead.bundle.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/market_app/static/market_app/app/register_supplier.js" afterPath="$PROJECT_DIR$/market_app/static/market_app/app/register_supplier.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/market_app/templates/registration/main.html" afterPath="$PROJECT_DIR$/market_app/templates/registration/main.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/market_app/templates/registration/register_supplier.html" afterPath="$PROJECT_DIR$/market_app/templates/registration/register_supplier.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/market_app/templates/shared_market_app/main.html" afterPath="$PROJECT_DIR$/market_app/templates/shared_market_app/main.html" />
@@ -27,11 +22,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="register_supplier.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/market_app/templates/registration/register_supplier.html">
+      <file leaf-file-name="register_supplier.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/market_app/static/market_app/app/register_supplier.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="577">
-              <caret line="123" column="46" lean-forward="false" selection-start-line="123" selection-start-column="46" selection-end-line="123" selection-end-column="46" />
+            <state relative-caret-position="537">
+              <caret line="62" column="18" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="102" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -40,18 +35,18 @@
       <file leaf-file-name="main.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/market_app/templates/shared_market_app/main.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="35" column="63" lean-forward="false" selection-start-line="35" selection-start-column="63" selection-end-line="35" selection-end-column="63" />
+            <state relative-caret-position="-13">
+              <caret line="23" column="30" lean-forward="false" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="register_supplier.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/market_app/static/market_app/app/register_supplier.js">
+      <file leaf-file-name="register_supplier.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/market_app/templates/registration/register_supplier.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="139">
+              <caret line="122" column="73" lean-forward="false" selection-start-line="122" selection-start-column="73" selection-end-line="122" selection-end-column="73" />
               <folding />
             </state>
           </provider>
@@ -91,6 +86,8 @@
       <find>register</find>
       <find>csrf_token</find>
       <find>mvp_app</find>
+      <find>data</find>
+      <find>movie</find>
     </findStrings>
     <replaceStrings>
       <replace>static ''</replace>
@@ -139,9 +136,9 @@
         <option value="$PROJECT_DIR$/business_services/logic/buyer_service.py" />
         <option value="$PROJECT_DIR$/mvp_app/settings.py" />
         <option value="$PROJECT_DIR$/market_app/templates/registration/main.html" />
-        <option value="$PROJECT_DIR$/market_app/templates/registration/register_supplier.html" />
         <option value="$PROJECT_DIR$/market_app/templates/shared_market_app/main.html" />
         <option value="$PROJECT_DIR$/market_app/static/market_app/app/register_supplier.js" />
+        <option value="$PROJECT_DIR$/market_app/templates/registration/register_supplier.html" />
       </list>
     </option>
   </component>
@@ -202,6 +199,11 @@
             <path>
               <item name="mvp_app" type="b2602c69:ProjectViewProjectNode" />
               <item name="mvp_app" type="462c0819:PsiDirectoryNode" />
+              <item name="common_lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mvp_app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mvp_app" type="462c0819:PsiDirectoryNode" />
               <item name="market_app" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -216,6 +218,42 @@
               <item name="market_app" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
               <item name="market_app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mvp_app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mvp_app" type="462c0819:PsiDirectoryNode" />
+              <item name="market_app" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="market_app" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mvp_app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mvp_app" type="462c0819:PsiDirectoryNode" />
+              <item name="market_app" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="market_app" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mvp_app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mvp_app" type="462c0819:PsiDirectoryNode" />
+              <item name="market_app" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mvp_app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mvp_app" type="462c0819:PsiDirectoryNode" />
+              <item name="market_app" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="registration" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mvp_app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mvp_app" type="462c0819:PsiDirectoryNode" />
+              <item name="market_app" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="shared_market_app" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -239,11 +277,11 @@
       <recent name="$PROJECT_DIR$/public_site/templates" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/market_app/static/market_app/app" />
       <recent name="$PROJECT_DIR$/market_app/templates/registration" />
       <recent name="$PROJECT_DIR$/market_app/templates/buyer" />
       <recent name="$PROJECT_DIR$/market_app/templates" />
       <recent name="$PROJECT_DIR$/market_app/static" />
-      <recent name="$PROJECT_DIR$/market_app" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -454,7 +492,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="django-line">
           <url>file://$PROJECT_DIR$/market_app/templates/registration/register_supplier.html</url>
-          <line>27</line>
+          <line>28</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
@@ -470,13 +508,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public_site/templates/site/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1332">
-          <caret line="74" column="34" lean-forward="true" selection-start-line="74" selection-start-column="34" selection-end-line="74" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public_site/static/public_site/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
@@ -804,14 +835,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/market_app/templates/registration/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="10" column="48" lean-forward="false" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/market_app/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -820,26 +843,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/market_app/templates/registration/register_supplier.html">
+    <entry file="file://$PROJECT_DIR$/market_app/templates/registration/main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="577">
-          <caret line="123" column="46" lean-forward="false" selection-start-line="123" selection-start-column="46" selection-end-line="123" selection-end-column="46" />
+        <state relative-caret-position="216">
+          <caret line="12" column="55" lean-forward="false" selection-start-line="12" selection-start-column="55" selection-end-line="12" selection-end-column="55" />
+          <folding>
+            <element signature="e#388#394#0#HTML" expanded="false" />
+            <element signature="e#394#400#0#HTML" expanded="false" />
+            <element signature="e#634#640#0#HTML" expanded="false" />
+            <element signature="e#640#646#0#HTML" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/market_app/static/market_app/app/register_supplier.js.bak">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/market_app/templates/shared_market_app/main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="35" column="63" lean-forward="false" selection-start-line="35" selection-start-column="63" selection-end-line="35" selection-end-column="63" />
+        <state relative-caret-position="-13">
+          <caret line="23" column="30" lean-forward="false" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/market_app/static/market_app/app/register_supplier.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="537">
+          <caret line="62" column="18" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="102" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/market_app/templates/registration/register_supplier.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="122" column="73" lean-forward="false" selection-start-line="122" selection-start-column="73" selection-end-line="122" selection-end-column="73" />
           <folding />
         </state>
       </provider>
