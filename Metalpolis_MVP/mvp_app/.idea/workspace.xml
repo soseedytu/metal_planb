@@ -2,12 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d5db2d3-613c-4fbe-af0a-8eafa659ca53" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/market_app/static/market_app/js/typeahead.bundle.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/market_app/static/market_app/typeahead/typeahead.bundle.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/market_app/static/market_app/typeahead/typeaheadKoBinding.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/market_app/static/market_app/typeahead/typeaheadStyle.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/market_app/templates/supplier/dashboard.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/market_app/templates/supplier/profile.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/market_app/static/market_app/js/typeahead.bundle.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/market_app/static/market_app/app/register_supplier.js" afterPath="$PROJECT_DIR$/market_app/static/market_app/app/register_supplier.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/market_app/templates/registration/main.html" afterPath="$PROJECT_DIR$/market_app/templates/registration/main.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/market_app/templates/buyer/Dashboard.html" afterPath="$PROJECT_DIR$/market_app/templates/buyer/Dashboard.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/market_app/templates/buyer/index.html" afterPath="$PROJECT_DIR$/market_app/templates/buyer/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/market_app/templates/registration/register_supplier.html" afterPath="$PROJECT_DIR$/market_app/templates/registration/register_supplier.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/market_app/templates/shared_market_app/main.html" afterPath="$PROJECT_DIR$/market_app/templates/shared_market_app/main.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/market_app/urls.py" afterPath="$PROJECT_DIR$/market_app/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/market_app/views/user_views.py" afterPath="$PROJECT_DIR$/market_app/views/user_views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/market_app/views/views.py" afterPath="$PROJECT_DIR$/market_app/views/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvp_app/settings.py" afterPath="$PROJECT_DIR$/mvp_app/settings.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,31 +31,94 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="register_supplier.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/market_app/static/market_app/app/register_supplier.js">
+      <file leaf-file-name="Dashboard.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/market_app/templates/buyer/Dashboard.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="537">
-              <caret line="62" column="18" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="102" selection-end-column="34" />
+            <state relative-caret-position="380">
+              <caret line="52" column="16" lean-forward="true" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="16" />
+              <folding>
+                <element signature="e#754#777#0#HTML" expanded="true" />
+                <element signature="e#2271#2292#0#HTML" expanded="true" />
+                <element signature="e#3858#3877#0#HTML" expanded="true" />
+                <element signature="e#4041#4063#0#HTML" expanded="true" />
+                <element signature="e#6565#6587#0#HTML" expanded="true" />
+                <element signature="e#6637#6659#0#HTML" expanded="true" />
+                <element signature="e#6728#6750#0#HTML" expanded="true" />
+                <element signature="e#6834#6856#0#HTML" expanded="true" />
+                <element signature="e#7435#7457#0#HTML" expanded="true" />
+                <element signature="e#7507#7529#0#HTML" expanded="true" />
+                <element signature="e#7597#7619#0#HTML" expanded="true" />
+                <element signature="e#7703#7725#0#HTML" expanded="true" />
+                <element signature="e#8317#8339#0#HTML" expanded="true" />
+                <element signature="e#8389#8411#0#HTML" expanded="true" />
+                <element signature="e#8481#8503#0#HTML" expanded="true" />
+                <element signature="e#8587#8609#0#HTML" expanded="true" />
+                <element signature="e#9225#9247#0#HTML" expanded="true" />
+                <element signature="e#9297#9319#0#HTML" expanded="true" />
+                <element signature="e#9391#9413#0#HTML" expanded="true" />
+                <element signature="e#9497#9519#0#HTML" expanded="true" />
+                <element signature="e#10147#10169#0#HTML" expanded="true" />
+                <element signature="e#10219#10241#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CreateRFQ.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/market_app/templates/buyer/CreateRFQ.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/market_app/templates/shared_market_app/main.html">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/market_app/views/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-13">
-              <caret line="23" column="30" lean-forward="false" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+            <state relative-caret-position="278">
+              <caret line="20" column="54" lean-forward="true" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="register_supplier.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/market_app/templates/registration/register_supplier.html">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/market_app/templates/buyer/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
-              <caret line="122" column="73" lean-forward="false" selection-start-line="122" selection-start-column="73" selection-end-line="122" selection-end-column="73" />
+            <state relative-caret-position="-50">
+              <caret line="19" column="20" lean-forward="false" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Profile.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/market_app/templates/buyer/Profile.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/market_app/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="298">
+              <caret line="47" column="81" lean-forward="false" selection-start-line="47" selection-start-column="65" selection-end-line="47" selection-end-column="81" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user_views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/market_app/views/user_views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="136" column="0" lean-forward="true" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -60,6 +132,7 @@
         <option value="HTML File" />
         <option value="Python Script" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -88,6 +161,7 @@
       <find>mvp_app</find>
       <find>data</find>
       <find>movie</find>
+      <find>country1</find>
     </findStrings>
     <replaceStrings>
       <replace>static ''</replace>
@@ -113,13 +187,11 @@
         <option value="$PROJECT_DIR$/market_app/templates/market/index.html" />
         <option value="$PROJECT_DIR$/market_app/templates/shared_market_app/footer.html" />
         <option value="$PROJECT_DIR$/market_app/templates/shared_market_app/header.html" />
-        <option value="$PROJECT_DIR$/market_app/templates/buyer/index.html" />
         <option value="$PROJECT_DIR$/start.sh" />
         <option value="$PROJECT_DIR$/business_services/services/buyer_service.py" />
         <option value="$PROJECT_DIR$/business_services/db_services/db_services.py" />
         <option value="$PROJECT_DIR$/business_services/db_services/data_services.py" />
         <option value="$PROJECT_DIR$/common_lib/constants.py" />
-        <option value="$PROJECT_DIR$/market_app/views/views.py" />
         <option value="$PROJECT_DIR$/public_site/templates/site/index.html" />
         <option value="$PROJECT_DIR$/market_app/templates/market/register.html" />
         <option value="$PROJECT_DIR$/business_services/logic/supplier_service.py" />
@@ -128,17 +200,25 @@
         <option value="$PROJECT_DIR$/common_lib/view_models/buyer/registration.py" />
         <option value="$PROJECT_DIR$/business_services/logic/code_table_service.py" />
         <option value="$PROJECT_DIR$/business_services/logic/company_service.py" />
-        <option value="$PROJECT_DIR$/market_app/urls.py" />
         <option value="$PROJECT_DIR$/common_lib/view_models/buyer/buyer_registration.py" />
         <option value="$PROJECT_DIR$/market_app/templates/registration/register_buyer.html" />
         <option value="$PROJECT_DIR$/common_lib/view_models/buyer/vm_buyer_registration.py" />
-        <option value="$PROJECT_DIR$/market_app/views/user_views.py" />
         <option value="$PROJECT_DIR$/business_services/logic/buyer_service.py" />
         <option value="$PROJECT_DIR$/mvp_app/settings.py" />
         <option value="$PROJECT_DIR$/market_app/templates/registration/main.html" />
+        <option value="$PROJECT_DIR$/market_app/static/market_app/js/typeahead.bundle.js" />
+        <option value="$PROJECT_DIR$/market_app/static/market_app/js/typeaheadKoBinding.js" />
+        <option value="$PROJECT_DIR$/market_app/static/market_app/js/typeaheadStyle.css" />
         <option value="$PROJECT_DIR$/market_app/templates/shared_market_app/main.html" />
         <option value="$PROJECT_DIR$/market_app/static/market_app/app/register_supplier.js" />
         <option value="$PROJECT_DIR$/market_app/templates/registration/register_supplier.html" />
+        <option value="$PROJECT_DIR$/market_app/views/views.py" />
+        <option value="$PROJECT_DIR$/market_app/templates/supplier/profile.html" />
+        <option value="$PROJECT_DIR$/market_app/views/user_views.py" />
+        <option value="$PROJECT_DIR$/market_app/urls.py" />
+        <option value="$PROJECT_DIR$/market_app/templates/buyer/Dashboard.html" />
+        <option value="$PROJECT_DIR$/market_app/templates/supplier/dashboard.html" />
+        <option value="$PROJECT_DIR$/market_app/templates/buyer/index.html" />
       </list>
     </option>
   </component>
@@ -210,35 +290,6 @@
               <item name="mvp_app" type="b2602c69:ProjectViewProjectNode" />
               <item name="mvp_app" type="462c0819:PsiDirectoryNode" />
               <item name="market_app" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mvp_app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mvp_app" type="462c0819:PsiDirectoryNode" />
-              <item name="market_app" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="market_app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mvp_app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mvp_app" type="462c0819:PsiDirectoryNode" />
-              <item name="market_app" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="market_app" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mvp_app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mvp_app" type="462c0819:PsiDirectoryNode" />
-              <item name="market_app" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="market_app" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mvp_app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mvp_app" type="462c0819:PsiDirectoryNode" />
-              <item name="market_app" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -246,14 +297,20 @@
               <item name="mvp_app" type="462c0819:PsiDirectoryNode" />
               <item name="market_app" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="registration" type="462c0819:PsiDirectoryNode" />
+              <item name="buyer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mvp_app" type="b2602c69:ProjectViewProjectNode" />
               <item name="mvp_app" type="462c0819:PsiDirectoryNode" />
               <item name="market_app" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="shared_market_app" type="462c0819:PsiDirectoryNode" />
+              <item name="supplier" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mvp_app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mvp_app" type="462c0819:PsiDirectoryNode" />
+              <item name="market_app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -267,21 +324,22 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/market_app/static/market_app/typeahead" />
+      <recent name="$PROJECT_DIR$/market_app/static/market_app" />
       <recent name="$PROJECT_DIR$/market_app/static/market_app/js" />
       <recent name="$PROJECT_DIR$/market_app/templates/registration" />
       <recent name="$PROJECT_DIR$/public_site/static/public_site" />
-      <recent name="$PROJECT_DIR$/public_site/static" />
-      <recent name="$PROJECT_DIR$/public_site/templates" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/market_app/templates/supplier" />
       <recent name="$PROJECT_DIR$/market_app/static/market_app/app" />
       <recent name="$PROJECT_DIR$/market_app/templates/registration" />
       <recent name="$PROJECT_DIR$/market_app/templates/buyer" />
       <recent name="$PROJECT_DIR$/market_app/templates" />
-      <recent name="$PROJECT_DIR$/market_app/static" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -406,7 +464,7 @@
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286991" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921174" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32766616" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32766616" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.389271" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286991" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -510,56 +568,6 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/public_site/static/public_site/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="14" lean-forward="true" selection-start-line="11" selection-start-column="11" selection-end-line="18" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_site/static/public_site/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3024">
-          <caret line="168" column="27" lean-forward="true" selection-start-line="168" selection-start-column="27" selection-end-line="168" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_site/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="32" lean-forward="true" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_site/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_site/templates/site/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_site/views/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_site/templates/index.html" />
-    <entry file="file://$PROJECT_DIR$/public_site/static/public_site/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3024">
-          <caret line="168" column="27" lean-forward="true" selection-start-line="168" selection-start-column="27" selection-end-line="168" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_site/static/public_site/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
           <caret line="18" column="14" lean-forward="true" selection-start-line="11" selection-start-column="11" selection-end-line="18" selection-end-column="14" />
         </state>
@@ -636,20 +644,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/market_app/templates/buyer/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="35" column="52" lean-forward="false" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/market_app/views/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/business_services/logic/user_service.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -668,16 +662,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="10" column="19" lean-forward="false" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/market_app/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding>
-            <element signature="e#640#672#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -685,14 +670,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="936">
           <caret line="52" column="69" lean-forward="false" selection-start-line="52" selection-start-column="44" selection-end-line="52" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/market_app/views/user_views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="26" column="53" lean-forward="false" selection-start-line="26" selection-start-column="53" selection-end-line="26" selection-end-column="53" />
           <folding />
         </state>
       </provider>
@@ -864,26 +841,149 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/market_app/templates/shared_market_app/main.html">
+    <entry file="file://$PROJECT_DIR$/market_app/static/market_app/typeahead/typeaheadStyle.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-13">
-          <caret line="23" column="30" lean-forward="false" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+        <state relative-caret-position="1152">
+          <caret line="64" column="1" lean-forward="false" selection-start-line="64" selection-start-column="1" selection-end-line="64" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/market_app/static/market_app/app/register_supplier.js">
+    <entry file="file://$PROJECT_DIR$/market_app/static/market_app/typeahead/typeahead.bundle.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="537">
-          <caret line="62" column="18" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="102" selection-end-column="34" />
+        <state relative-caret-position="29628">
+          <caret line="1646" column="18" lean-forward="false" selection-start-line="1646" selection-start-column="18" selection-end-line="1646" selection-end-column="18" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/market_app/static/market_app/typeahead/typeaheadKoBinding.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5490">
+          <caret line="305" column="0" lean-forward="true" selection-start-line="305" selection-start-column="0" selection-end-line="305" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/market_app/templates/registration/register_supplier.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="122" column="73" lean-forward="false" selection-start-line="122" selection-start-column="73" selection-end-line="122" selection-end-column="73" />
+        <state relative-caret-position="201">
+          <caret line="119" column="26" lean-forward="true" selection-start-line="119" selection-start-column="26" selection-end-line="119" selection-end-column="26" />
+          <folding>
+            <element signature="e#5418#5438#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/market_app/static/market_app/app/register_supplier.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="27" column="11" lean-forward="false" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/market_app/templates/shared_market_app/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="36" column="68" lean-forward="false" selection-start-line="36" selection-start-column="59" selection-end-line="36" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/market_app/templates/supplier/profile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/market_app/views/user_views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="136" column="0" lean-forward="true" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/market_app/templates/buyer/Profile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/market_app/views/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="20" column="54" lean-forward="true" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/market_app/templates/supplier/dashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="490">
+          <caret line="43" column="31" lean-forward="false" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/market_app/templates/buyer/Dashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="52" column="16" lean-forward="true" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="16" />
+          <folding>
+            <element signature="e#754#777#0#HTML" expanded="true" />
+            <element signature="e#2271#2292#0#HTML" expanded="true" />
+            <element signature="e#3858#3877#0#HTML" expanded="true" />
+            <element signature="e#4041#4063#0#HTML" expanded="true" />
+            <element signature="e#6565#6587#0#HTML" expanded="true" />
+            <element signature="e#6637#6659#0#HTML" expanded="true" />
+            <element signature="e#6728#6750#0#HTML" expanded="true" />
+            <element signature="e#6834#6856#0#HTML" expanded="true" />
+            <element signature="e#7435#7457#0#HTML" expanded="true" />
+            <element signature="e#7507#7529#0#HTML" expanded="true" />
+            <element signature="e#7597#7619#0#HTML" expanded="true" />
+            <element signature="e#7703#7725#0#HTML" expanded="true" />
+            <element signature="e#8317#8339#0#HTML" expanded="true" />
+            <element signature="e#8389#8411#0#HTML" expanded="true" />
+            <element signature="e#8481#8503#0#HTML" expanded="true" />
+            <element signature="e#8587#8609#0#HTML" expanded="true" />
+            <element signature="e#9225#9247#0#HTML" expanded="true" />
+            <element signature="e#9297#9319#0#HTML" expanded="true" />
+            <element signature="e#9391#9413#0#HTML" expanded="true" />
+            <element signature="e#9497#9519#0#HTML" expanded="true" />
+            <element signature="e#10147#10169#0#HTML" expanded="true" />
+            <element signature="e#10219#10241#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/market_app/templates/buyer/CreateRFQ.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/market_app/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="47" column="81" lean-forward="false" selection-start-line="47" selection-start-column="65" selection-end-line="47" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/market_app/templates/buyer/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-50">
+          <caret line="19" column="20" lean-forward="false" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="20" />
           <folding />
         </state>
       </provider>

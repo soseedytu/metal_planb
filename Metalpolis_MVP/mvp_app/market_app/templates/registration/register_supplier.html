@@ -113,15 +113,32 @@
                       {% endif %}
                   </div>
 
-                    <hr/>
-
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h4><b>Services</b></h4>
+                        </div>
+                    </div>
                     <div class="row">
                         <div class="col-sm-5">
                             <div class="form-group">
-                              <label for="exampleInputEmail1">Search Services</label>
-                              <section>
-                                  <input type="text" class="typeahead" />
-                            </section>
+                                <label for="country1">Search Service</label>
+                                  <input id="country1" class="form-control" style="width: 400px" type="text"
+                                         data-bind="typeahead: {
+                                         selectedDatum: vm.selectedCountry,
+                                         local: vm.countryList,
+                                         valueKey: 'code',
+                                         nameKey: 'name',
+                                         tokenFields: 'name,code,localName',
+                                         valueFields: 'localName',
+                                         templateElement: '#countryItemTemplate',
+                                         restrictInputToDatum: true
+                                         }">
+                                <br>
+                                <div data-bind="if: vm.selectedCountry()">
+                                Selected Service: <span data-bind="text: vm.selectedCountry().name"></span><br />
+                                The subscribed local name: <span data-bind="text: vm.countryText"></span>
+                                 <span> <img data-bind="    attr: { src: 'https://raw.github.com/Svakinn/typeahead.js/typeaheadSimple/imgages/' + vm.selectedCountry().code + '.png' }" /></span>
+                                </div>
                             </div>
                         </div>
                         <div class="col-sm-6">
@@ -151,5 +168,7 @@
 
 </form>
 
+    <script src="{% static 'market_app' %}/typeahead/typeaheadKoBinding.js" charset="UTF-8"></script>
+    <script src="{% static 'market_app' %}/typeahead/typeahead.bundle.js"></script>
 <script src="{% static 'market_app' %}/app/register_supplier.js"></script>
 {% endblock %}

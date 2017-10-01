@@ -1,103 +1,34 @@
-ko.bindingHandlers.typeahead = {
-    init: function (element, valueAccessor) {
-        var options = ko.unwrap(valueAccessor()) || {},
-            $el = $(element),
-            triggerChange = function () {
-                $el.change();
-            };
+//Encoding UTF8
+var vm = (function () {
+    var countryText = ko.observable(null);
+    var selectedCountry = ko.observable();
 
-        var displayKey = options.displayKey;
-        options.displayKey = function(item) {
-            return item[displayKey]();
-        };
-        options.dupDetector = function(remoteMatch, localMatch) {
-            return false;
-        };
-        options.source = options.taOptions.ttAdapter();
+    var countryList = [
+         { code: 'IS', name: 'Iceland', localName: 'Ísland' },
+         { code: 'GB', name: 'Great Britain', localName: '' },
+         { code: 'US', name: 'USA', localName: '' },
+         { code: 'AE', name: 'UNITED ARAB EMIRATES', localName: 'دولة الإمارات العربية المتحدة' },
+         { code: 'IE', name: 'IRELAND', localName: 'Éire' },
+         { code: 'IL', name: 'ISRAEL', localName: 'מְדִינַת יִשְׂרָאֵל' },
+         { code: 'IM', name: 'ISLE OF MAN', localName: 'Ellan Vannin' },
+         { code: 'IQ', name: 'BRITISH INDIAN OCEAN TERRITORY', localName: 'Chagos Islands' },
+         { code: 'JP', name: 'JAPAN', localName: '' }
+    ];
 
-        console.log('options local set - ', options.taOptions.ttAdapter);
-        var thisTypeAhead = $el.typeahead(null, options)
-        .on("typeahead:selected", triggerChange)
-        .on("typeahead:autocompleted", triggerChange)
-        ;
+    var vm = {
+        countryText: countryText,
+        selectedCountry: selectedCountry,
+        countryList: countryList,
+    };
+    return vm;
+})();
 
-        ko.utils.domNodeDisposal.addDisposeCallback(element, function () {
-            $el.typeahead("destroy");
-            $el = null;
-        });
-    }
-};
+vm.selectedCountry.subscribe(function () {
+    //Example on how we can use subscription to update data on our bound data, not that we actually need it for this example but include it to show how it is done.
+    vm.countryText((vm.selectedCountry() ? (vm.selectedCountry().localName ? vm.selectedCountry().localName : vm.selectedCountry().name) : ''));
+}, vm);
 
-var numbers = new Bloodhound({
-  datumTokenizer: function(d) {
-      console.log(Bloodhound.tokenizers.whitespace(d.num));
-      return Bloodhound.tokenizers.whitespace(d.num);
-  },
-  queryTokenizer: Bloodhound.tokenizers.whitespace,
-  local: [
-    { num: 'one' },
-    { num: 'two' },
-    { num: 'three' },
-    { num: 'four' },
-    { num: 'five' },
-    { num: 'six' },
-    { num: 'seven' },
-    { num: 'eight' },
-    { num: 'nine' },
-    { num: 'ten' }
-  ]
-});
+//Preset the first country in the list as the selected datum, showing of the two-way binding to the control
+this.vm.selectedCountry(vm.countryList[0]);
 
-// initialize the bloodhound suggestion engine
-numbers.initialize();
-
-// instantiate the typeahead UI
-$('.typeahead').typeahead(null, {
-  displayKey: 'num',
-  source: numbers.ttAdapter()
-});
-
-function Option(id, name) {
-    var self = this;
-    self.Id = ko.observable(id);
-    self.Name = ko.observable(name);
-}
-
-function viewModel() {
-    var self = this;
-    self.thisValue = ko.observable();
-    self.someOptions = ko.observableArray([
-        new Option(1, 'John'),
-        new Option(2, 'Johnny'),
-        new Option(3, 'Billy')
-    ]);
-    self.theseOptions = new Bloodhound({
-      datumTokenizer: function(d) {
-          var seomth = Bloodhound.tokenizers.whitespace(d.Name());
-          console.log(seomth);
-          return seomth },
-      queryTokenizer: Bloodhound.tokenizers.whitespace,
-        remote : {
-            url : '%QUERY',
-            transport : function(url, options, onSuccess, onError) {
-                var deferred = $.Deferred();
-                deferred.done( function() { onSuccess(this); });
-
-                var filterVal = url.toLowerCase();
-                var result = self.someOptions().filter( function(item) {
-                    return !!~item.Name().toLowerCase().indexOf(filterVal);
-                });
-                deferred.resolveWith( result );
-                return deferred.promise();
-            }
-
-        }
-      //local: self.someOptions()
-    });
-    self.theseOptions.initialize();
-    self.addNew = function () {
-        self.someOptions.push(new Option(self.someOptions().length + 1, 'Johnnn'));
-        self.theseOptions.transport.constructor.resetCache();
-    }
-}
-ko.applyBindings(new viewModel());
+ko.applyBindings(vm);

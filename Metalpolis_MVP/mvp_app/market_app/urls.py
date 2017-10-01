@@ -44,6 +44,8 @@ urlpatterns = [
     url(r'^buyer/quotation', user_views.quotation, name="buyer_quotation"),
     # http://localhost:8000/market_app/buyer/profile
     url(r'^buyer/profile', user_views.buyer_profile, name="buyer_profile"),
+    # http://localhost:8000/market_app/supplier/profile
+    url(r'^supplier/profile/(?P<supplier_id>[0-9]+)', user_views.supplier_profile, name="supplier_profile"),
     # http://localhost:8000/market_app/register/supplier
     url(r'^register/supplier$', user_views.register_supplier, name="register_supplier"),
     # http://localhost:8000/public_site/index.html
