@@ -111,6 +111,14 @@ def create_rfq(request):
     return render(request, 'buyer/CreateRFQ.html')
 
 
+def rfq_preview(request, rfq_id):
+    # TODO: Please add Get Logic
+    # TODO: please add Post Logic
+    print ('create rfq page started')
+
+    return render(request, 'buyer/rfq_preview.html')
+
+
 def rfq_list(request):
     # TODO: Please add Get Logic
     # TODO: please add Post Logic

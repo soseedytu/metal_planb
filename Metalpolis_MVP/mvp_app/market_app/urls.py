@@ -38,6 +38,8 @@ urlpatterns = [
     url(r'^buyer/timeline$', user_views.buyer_timeline, name="buyer_timeline"),
     # http://localhost:8000/market_app/buyer/create_rfq
     url(r'^buyer/create_rfq$', user_views.create_rfq, name="buyer_create_rfq"),
+    # http://localhost:8000/market_app/buyer/rfq/preview/1
+    url(r'^buyer/rfq/preview/(?P<rfq_id>[0-9]+)', user_views.rfq_preview, name="rfq_preview"),
     # http://localhost:8000/market_app/buyer/rfq_list
     url(r'^buyer/rfq_list$', user_views.rfq_list, name="buyer_rfq_list"),
     # http://localhost:8000/market_app/buyer/quotation
