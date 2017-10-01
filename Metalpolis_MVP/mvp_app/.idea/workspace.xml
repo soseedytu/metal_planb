@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d5db2d3-613c-4fbe-af0a-8eafa659ca53" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/market_app/static/market_app/style.css" afterPath="$PROJECT_DIR$/market_app/static/market_app/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/market_app/templates/buyer/CreateRFQ.html" afterPath="$PROJECT_DIR$/market_app/templates/buyer/CreateRFQ.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/market_app/templates/buyer/Quotation.html" afterPath="$PROJECT_DIR$/market_app/templates/buyer/Quotation.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/market_app/templates/buyer/index.html" afterPath="$PROJECT_DIR$/market_app/templates/buyer/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvp_app/settings.py" afterPath="$PROJECT_DIR$/mvp_app/settings.py" />
     </list>
@@ -18,104 +19,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Dashboard.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/market_app/templates/buyer/Dashboard.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="52" column="16" lean-forward="true" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="16" />
-              <folding>
-                <element signature="e#754#777#0#HTML" expanded="true" />
-                <element signature="e#2271#2292#0#HTML" expanded="true" />
-                <element signature="e#3858#3877#0#HTML" expanded="true" />
-                <element signature="e#4041#4063#0#HTML" expanded="true" />
-                <element signature="e#6565#6587#0#HTML" expanded="true" />
-                <element signature="e#6637#6659#0#HTML" expanded="true" />
-                <element signature="e#6728#6750#0#HTML" expanded="true" />
-                <element signature="e#6834#6856#0#HTML" expanded="true" />
-                <element signature="e#7435#7457#0#HTML" expanded="true" />
-                <element signature="e#7507#7529#0#HTML" expanded="true" />
-                <element signature="e#7597#7619#0#HTML" expanded="true" />
-                <element signature="e#7703#7725#0#HTML" expanded="true" />
-                <element signature="e#8317#8339#0#HTML" expanded="true" />
-                <element signature="e#8389#8411#0#HTML" expanded="true" />
-                <element signature="e#8481#8503#0#HTML" expanded="true" />
-                <element signature="e#8587#8609#0#HTML" expanded="true" />
-                <element signature="e#9225#9247#0#HTML" expanded="true" />
-                <element signature="e#9297#9319#0#HTML" expanded="true" />
-                <element signature="e#9391#9413#0#HTML" expanded="true" />
-                <element signature="e#9497#9519#0#HTML" expanded="true" />
-                <element signature="e#10147#10169#0#HTML" expanded="true" />
-                <element signature="e#10219#10241#0#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CreateRFQ.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CreateRFQ.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/market_app/templates/buyer/CreateRFQ.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/market_app/views/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="20" column="54" lean-forward="true" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/market_app/templates/buyer/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="43" column="61" lean-forward="true" selection-start-line="43" selection-start-column="44" selection-end-line="43" selection-end-column="61" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/market_app/static/market_app/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="27" lean-forward="false" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Profile.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/market_app/templates/buyer/Profile.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/market_app/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="47" column="81" lean-forward="false" selection-start-line="47" selection-start-column="65" selection-end-line="47" selection-end-column="81" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user_views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/market_app/views/user_views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="136" column="0" lean-forward="true" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
+            <state relative-caret-position="144">
+              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -217,6 +125,8 @@
         <option value="$PROJECT_DIR$/market_app/templates/supplier/dashboard.html" />
         <option value="$PROJECT_DIR$/market_app/static/market_app/style.css" />
         <option value="$PROJECT_DIR$/market_app/templates/buyer/index.html" />
+        <option value="$PROJECT_DIR$/market_app/templates/buyer/CreateRFQ.html" />
+        <option value="$PROJECT_DIR$/market_app/templates/buyer/Quotation.html" />
       </list>
     </option>
   </component>
@@ -475,7 +385,7 @@
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286991" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921174" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32766616" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32766616" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.389271" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286991" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -578,13 +488,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public_site/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public_site/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -908,7 +811,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/market_app/views/user_views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
+        <state relative-caret-position="348">
           <caret line="136" column="0" lean-forward="true" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
           <folding />
         </state>
@@ -935,43 +838,35 @@
         <state relative-caret-position="380">
           <caret line="52" column="16" lean-forward="true" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="16" />
           <folding>
-            <element signature="e#754#777#0#HTML" expanded="true" />
-            <element signature="e#2271#2292#0#HTML" expanded="true" />
-            <element signature="e#3858#3877#0#HTML" expanded="true" />
-            <element signature="e#4041#4063#0#HTML" expanded="true" />
-            <element signature="e#6565#6587#0#HTML" expanded="true" />
-            <element signature="e#6637#6659#0#HTML" expanded="true" />
-            <element signature="e#6728#6750#0#HTML" expanded="true" />
-            <element signature="e#6834#6856#0#HTML" expanded="true" />
-            <element signature="e#7435#7457#0#HTML" expanded="true" />
-            <element signature="e#7507#7529#0#HTML" expanded="true" />
-            <element signature="e#7597#7619#0#HTML" expanded="true" />
-            <element signature="e#7703#7725#0#HTML" expanded="true" />
-            <element signature="e#8317#8339#0#HTML" expanded="true" />
-            <element signature="e#8389#8411#0#HTML" expanded="true" />
-            <element signature="e#8481#8503#0#HTML" expanded="true" />
-            <element signature="e#8587#8609#0#HTML" expanded="true" />
-            <element signature="e#9225#9247#0#HTML" expanded="true" />
-            <element signature="e#9297#9319#0#HTML" expanded="true" />
-            <element signature="e#9391#9413#0#HTML" expanded="true" />
-            <element signature="e#9497#9519#0#HTML" expanded="true" />
-            <element signature="e#10147#10169#0#HTML" expanded="true" />
-            <element signature="e#10219#10241#0#HTML" expanded="true" />
+            <element signature="e#754#777#0#HTML" expanded="false" />
+            <element signature="e#2271#2292#0#HTML" expanded="false" />
+            <element signature="e#3858#3877#0#HTML" expanded="false" />
+            <element signature="e#4041#4063#0#HTML" expanded="false" />
+            <element signature="e#6565#6587#0#HTML" expanded="false" />
+            <element signature="e#6637#6659#0#HTML" expanded="false" />
+            <element signature="e#6728#6750#0#HTML" expanded="false" />
+            <element signature="e#6834#6856#0#HTML" expanded="false" />
+            <element signature="e#7435#7457#0#HTML" expanded="false" />
+            <element signature="e#7507#7529#0#HTML" expanded="false" />
+            <element signature="e#7597#7619#0#HTML" expanded="false" />
+            <element signature="e#7703#7725#0#HTML" expanded="false" />
+            <element signature="e#8317#8339#0#HTML" expanded="false" />
+            <element signature="e#8389#8411#0#HTML" expanded="false" />
+            <element signature="e#8481#8503#0#HTML" expanded="false" />
+            <element signature="e#8587#8609#0#HTML" expanded="false" />
+            <element signature="e#9225#9247#0#HTML" expanded="false" />
+            <element signature="e#9297#9319#0#HTML" expanded="false" />
+            <element signature="e#9391#9413#0#HTML" expanded="false" />
+            <element signature="e#9497#9519#0#HTML" expanded="false" />
+            <element signature="e#10147#10169#0#HTML" expanded="false" />
+            <element signature="e#10219#10241#0#HTML" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/market_app/templates/buyer/CreateRFQ.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/market_app/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
+        <state relative-caret-position="384">
           <caret line="47" column="81" lean-forward="false" selection-start-line="47" selection-start-column="65" selection-end-line="47" selection-end-column="81" />
           <folding />
         </state>
@@ -995,8 +890,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/market_app/templates/buyer/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="43" column="61" lean-forward="true" selection-start-line="43" selection-start-column="44" selection-end-line="43" selection-end-column="61" />
+        <state relative-caret-position="222">
+          <caret line="46" column="33" lean-forward="true" selection-start-line="46" selection-start-column="33" selection-end-line="46" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/market_app/templates/buyer/Quotation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="217" column="39" lean-forward="false" selection-start-line="217" selection-start-column="39" selection-end-line="217" selection-end-column="39" />
+          <folding>
+            <element signature="e#810#2114#0#HTML" expanded="false" />
+            <element signature="e#2665#2685#0#HTML" expanded="true" />
+            <element signature="e#2752#4056#0#HTML" expanded="false" />
+            <element signature="e#4697#6001#0#HTML" expanded="false" />
+            <element signature="e#6655#7959#0#HTML" expanded="false" />
+            <element signature="e#8591#9895#0#HTML" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/market_app/templates/buyer/CreateRFQ.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
         </state>
       </provider>
