@@ -31,7 +31,7 @@ urlpatterns = [
     # http://localhost:8000/market_app/register/buyer
     # url(r'^login$', user_views.login, name="login"),
     # http://localhost:8000/market_app/buyer/dashboard
-    url(r'^buyer/dashboard$', user_views.login, name="auth_login"),
+    url(r'^login/$', user_views.login, name="auth_login"),
     # http://localhost:8000/market_app/buyer/dashboard
     url(r'^buyer/dashboard$', user_views.buyer_dashboard, name="buyer_dashboard"),
     # http://localhost:8000/market_app/buyer/timeline
@@ -47,5 +47,5 @@ urlpatterns = [
     # http://localhost:8000/market_app/register/supplier
     url(r'^register/supplier$', user_views.register_supplier, name="register_supplier"),
     # http://localhost:8000/public_site/index.html
-    url(r'^public_site$', public_view.sign_out, name="sign_out"),
+    url(r'^logout/$', public_view.sign_out, name="sign_out"),
 ]
