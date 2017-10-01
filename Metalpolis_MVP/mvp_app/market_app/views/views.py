@@ -18,5 +18,5 @@ def detail(request, supplier_id):
     dict = {
         'supplier_list': None
     }
-    return render(request, 'buyer/index.html', dict)
+    return render(request, 'buyer/profile.html', dict)
 
