@@ -60,6 +60,7 @@ def login(request):
         print (request.method)
         form = LoginForm(request.POST)
         print(form.is_valid())
+        # TODO: split between buyer and supplier
         _url = 'buyer/Dashboard.html'
         # check if form is valid
         if form.is_valid():
